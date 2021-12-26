@@ -826,6 +826,12 @@ while x == 0:
             print(count, ".", monthly_sales["month"], "\nNo. de ventas:", monthly_sales["qty_sales"], "\n")
         else: 
           break
+      print("Por último, se sugiere detener la adquisición de productos poco buscados hasta ver un aumento en sus búsquedas y ventas.\nEstos productos son:")
+      count = 0
+      for sorted_search in sorted_search_count:
+        if sorted_search["qty_searches"] <= 10:
+          count += 1
+          print(count, ". ID:", sorted_search["id_product"], "\nProducto:", sorted_search["name"], "\nNo. de búsquedas:", sorted_search["qty_searches"])
       input("Pulse enter para continuar")
     #5. CERRAR SESIÓN
     elif choice2 == 5:
