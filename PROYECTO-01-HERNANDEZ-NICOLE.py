@@ -832,6 +832,7 @@ while x == 0:
         if sorted_search["qty_searches"] <= 10:
           count += 1
           print(count, ". ID:", sorted_search["id_product"], "\nProducto:", sorted_search["name"], "\nNo. de búsquedas:", sorted_search["qty_searches"])
+      print("\nEstrategia generada por el analizador de datos de LifeStore.")
       input("Pulse enter para continuar")
     #5. CERRAR SESIÓN
     elif choice2 == 5:
